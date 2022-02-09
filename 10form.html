@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <!-- macam-macam elemen pada tag input adalah text,password,radio,checkbox,submit,reset dan button -->
+        <!-- namun tidak disarankan menggunakan submit,reset dan button karena itu element dari tag button -->
+
+        <!-- macam-macam tag pada tag form -->
+        <!-- terdapat input,textarea,select,button,label -->
+        <h4>Untuk Elemen text tanpa label</h4>
+        username :<input type="text">
+
+        <!-- kelebihan menggunakan label adalah kita dapat dengan mudah masuk kedalam textbox tanpa harus menekan kolom -->
+        <h4>Untuk Elemen text dengan label</h4>
+        <label for="username">username :</label>
+        <input type="text" id="username">
+            <br>
+        <label for="password">password :</label>
+        <input type="password" id="password">
+            <br><br>
+        
+        <!-- kegunaan "name" adalah untuk memberi tahu bahwa pria dan wanita satu grup sehingga tidak terjadi multi option-->
+        <!-- jika tidak menggunakan "name" maka kita dapat memilih jawaban lebih dari satu bahkan dua2 nya sekaligus -->
+        <!-- penggunaan radio button hanya maksimal untuk 2 pilihan,jika lebih maka menggunakan checkbox -->
+        <!-- pada radio button kita hanya diperbolehkan memilih 1 pilihan saja atau tidak multi option -->
+        <input type="radio" id="pria" name="jeniskelamin"> <label for="pria">pria</label>
+        <input type="radio" id="wanita" name="jeniskelamin"> <label for="wanita">wanita</label>
+            <br>
+        
+        <!-- penggunaan checkbox -->
+        <!-- dengan checkbox kita dapat memasukan lebih dari 1 pilihan/multi optin dan option yang ditawarkan lebih dari 2 -->
+        <h4>Masukan Hobi Anda</h4>
+        <input type="checkbox" id="bersepeda"> <label for="bersepeda">bersepeda</label>
+        <input type="checkbox" id="Mendaki"> <label for="Mendaki">Mendaki</label>
+        <input type="checkbox" id="berlari"> <label for="berlari">berlari</label>
+            <br>
+        
+        <!-- pilihan elemen pada tag button terdapat submit,reset dan button -->
+        <button type="submit">kirim!</button>
+    </form>
+</body>
+</html>
